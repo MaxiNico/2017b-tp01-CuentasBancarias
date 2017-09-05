@@ -7,5 +7,5 @@
 
 ## Estudiantes
 
-* XXX ([xxx](https://github.com/xxx))
-* XXX ([xxx](https://github.com/xxx))
+* Maximiliano Lima ([MaxiLima](https://github.com/MaxiLima))
+* Nicolás Casaux ([Kazoo0](https://github.com/Kazoo0))
