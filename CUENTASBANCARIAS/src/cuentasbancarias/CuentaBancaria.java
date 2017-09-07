@@ -18,4 +18,8 @@ public class CuentaBancaria {
 		this.saldo = that;
 	}
 
+	public void sumarSaldo(double saldo) {
+		this.saldo+=saldo;
+	}
+
 }

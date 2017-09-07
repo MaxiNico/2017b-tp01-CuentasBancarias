@@ -21,5 +21,12 @@ public class CuentaBancariaTest {
 		
 		
 	}
+	
+	@Test
+	public void testSumarSaldo() {
+		CuentaBancaria cuenta1= new CuentaBancaria();
+		cuenta1.sumarSaldo(100);
+		assertEquals(100,cuenta1.getSaldo(),0);
+	}
 
 }
