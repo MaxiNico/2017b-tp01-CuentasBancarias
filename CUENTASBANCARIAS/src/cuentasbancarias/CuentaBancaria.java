@@ -21,5 +21,8 @@ public class CuentaBancaria {
 	public void sumarSaldo(double saldo) {
 		this.saldo+=saldo;
 	}
-
+	
+	public void restarSaldo(double saldo) {
+		this.saldo-=saldo;
+	}
 }
