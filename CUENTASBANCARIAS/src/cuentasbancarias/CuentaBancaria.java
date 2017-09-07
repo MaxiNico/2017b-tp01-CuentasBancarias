@@ -22,7 +22,14 @@ public class CuentaBancaria {
 		this.saldo+=saldo;
 	}
 	
-	public void restarSaldo(double saldo) {
-		this.saldo-=saldo;
+	public boolean restarSaldo(double saldo) {
+		if( this.saldo >=saldo)
+		{
+			this.saldo-=saldo;
+			return true;
+		}
+		else
+			return false;
+			
 	}
 }

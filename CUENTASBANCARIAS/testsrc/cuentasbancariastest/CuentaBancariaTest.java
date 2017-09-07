@@ -34,9 +34,7 @@ public class CuentaBancariaTest {
 	public void testRestarSaldo(){
 		
 		CuentaBancaria cuenta1 = new CuentaBancaria(1000);
-		
 		cuenta1.restarSaldo(500);
-		
 		assertEquals(500, cuenta1.getSaldo(), 0);
 	}
 }
