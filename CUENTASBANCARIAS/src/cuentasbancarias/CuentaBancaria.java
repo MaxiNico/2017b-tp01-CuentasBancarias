@@ -29,7 +29,20 @@ public class CuentaBancaria {
 			return true;
 		}
 		else
-			return false;
-			
+			return false;		
+	}
+	
+	public void transferirMontoHacia(double dinero, CuentaBancaria that){
+		
+		this.restarSaldo(dinero);
+		that.sumarSaldo(dinero);
+		
 	}
 }
+
+
+
+
+
+
+
