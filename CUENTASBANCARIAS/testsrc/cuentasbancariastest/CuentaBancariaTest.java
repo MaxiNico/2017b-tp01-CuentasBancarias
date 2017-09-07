@@ -31,10 +31,18 @@ public class CuentaBancariaTest {
 	}
 	
 	@Test
-	public void testSumarSaldo() {
-		CuentaBancaria cuenta1= new CuentaBancaria();
-		cuenta1.sumarSaldo(100);
-		assertEquals(100,cuenta1.getSaldo(),0);
+	public void testRestarSaldo(){
+		
+		CuentaBancaria cuenta1 = new CuentaBancaria(1000);
+		
+		cuenta1.restarSaldo(500);
+		
+		assertEquals(500, cuenta1.getSaldo(), 0);
 	}
-
 }
+
+
+
+
+
+
