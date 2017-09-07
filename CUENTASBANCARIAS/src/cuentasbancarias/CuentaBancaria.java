@@ -32,11 +32,14 @@ public class CuentaBancaria {
 			return false;		
 	}
 	
-	public void transferirMontoHacia(double dinero, CuentaBancaria that){
+	public boolean transferirMontoHacia(double dinero, CuentaBancaria that){
 		
-		this.restarSaldo(dinero);
-		that.sumarSaldo(dinero);
+		if(this.restarSaldo(dinero)){
+			that.sumarSaldo(dinero);
+			return true;
+		}
 		
+		return false;
 	}
 }
 
