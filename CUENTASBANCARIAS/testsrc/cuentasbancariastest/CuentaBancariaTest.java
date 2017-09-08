@@ -43,10 +43,10 @@ public class CuentaBancariaTest {
 		CuentaBancaria cuenta1 = new CuentaBancaria(1000);
 		CuentaBancaria cuenta2 = new CuentaBancaria();
 		
-		cuenta1.transferirMontoHacia(500,cuenta2);
-		assertEquals(cuenta1.getSaldo(), cuenta2.getSaldo(),0);
-		
-		
+		assertTrue(!cuenta1.transferirMontoHacia(1100,cuenta2));
+//		cuenta1.transferirMontoHacia(500,cuenta2);
+//		assertEquals(cuenta1.getSaldo(), cuenta2.getSaldo(),0);
+			
 	}
 }
 
